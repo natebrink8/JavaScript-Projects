@@ -1,7 +1,12 @@
-const myElement = document.getElementById("myFont1");
-myElement.style.color = "blue";
+function myFunction() {
+    var sentence = "I find JavaScript to be";
+    sentence += " frustrating and don't seem to get clarity, just do-this directions.";
+    document.getElementById("Concatenate").innerHTML = sentence;
+} 
 
-const myElement = document.getElementById("myFont2");
-myElement.style.color = "red";
 
 
+//function myFunction() {
+//    var str = "BUTTONS!"
+//    document.getElementById("ButtonText").innerHTML = str;
+//} 
