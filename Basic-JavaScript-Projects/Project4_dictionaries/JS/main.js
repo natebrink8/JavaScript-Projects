@@ -1,4 +1,4 @@
-function nateDictionary1() {
+function nateDictionary1() {        // to call a name
     var Neighbor = {
         Species:"Human",
         Gender:"Female",
@@ -9,7 +9,7 @@ function nateDictionary1() {
     document.getElementById("Dictionary").innerHTML = Neighbor.Name;
 }
 
-function nateDictionary2() {
+function nateDictionary2() {        // to delete a sub var
     var Neighbor = {
         Species:"Human",
         Gender:"Female",
