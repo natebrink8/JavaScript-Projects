@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS/CSS_1_Contact-Form.css"> 
+    </head>
+
+    <body>
+        <h2>Contact Form</h2>
+        <div>
+            <form name="nbForm" action="https://formspree.io/f/xdorqaqe" onsubmit="return validateForm()" method="POST">
+            <!-- The form uses a 3rd party service (formspree) to submit the contact form data. -->
+                <label>Email:</label><br>
+                <input type="text" id="Email" name="Email" placeholder="Please enter your email."><br>
+                <label>Message:</label><br>
+                <input type="text" id="Message" name="Message" placeholder="How can I be of service?"><br>
+                <input type="submit" value="SUBMIT"><br>
+            </form>
+            <p>Clicking the "Submit" button will pass your message directly to our round-the-clock service experts who anxiously await your message.</p>
+        </div>
+        <script src="JS/JavaScript_1_Contact-Form.js"></script>
+    </body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+======== CONTACT FORM: The Formspree site doesn't receive name:
+                <label>Name:</label><br>
+                <input type="text" id="" name="" placeholder="Please enter your name."><br>
+
+========= createRadialGradient 
+        <canvas id="nbCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+            Your browser does not support the HTML canvas tag.</canvas>
+var c = document.getElementById("nbCanvas");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"white");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,150,80);
+
+========= GET ELEMENT BY CLASS method
+        <h1 class="Click">This text will change when the button below is clicked!</h1>
+        <h3 class="Click">This wretched text, due to its pauper esque citizenship, will not change.</h3>
+        <button onclick="Hello_World_Function()">Clicky Click Click</button>
+function Hello_World_Function() {
+    var A = document.getElementsByClassName("Click");
+    A[0].innerHTML = "This text has changed!";
+}
+
+========= CASE method
+    <h1>Who's your favorite NFL team from the NFC West?</h1>
+    <h3>Pick a west coast team below!</h3>
+    <ul>
+        <li>The 49ers</li>
+        <li>The Cardinals</li>
+        <li>The Rams</li>
+        <li>The Seahawks</li>
+    </ul>
+    <h3>Enter your team name:</h3>
+    <input id="Team_Input" type="text">
+    <button onclick="Team_Function()">Submit Team</button>
+    <p id="Output"></p>
+function Team_Function() {
+    var Team_Output;
+    var Teams = document.getElementById("Team_Input").value;
+    var Team_String = " are a great team!";
+    switch(Teams) {
+        case "The 49ers":
+            Team_Output = "The 49ers" + Team_String;
+        break;
+        case "The Cardinals":
+            Team_Output = "The Cardinals" + Team_String;
+        break;
+        case "The Rams":
+            Team_Output = "The Rams" + Team_String;
+        break;
+        case "The Seahawks":
+            Team_Output = "The Seahawks" + Team_String;
+        break;
+        default:
+            Team_Output = "Please enter a team name as displayed, from the list above.";
+    }
+    document.getElementById("Output").innerHTML = Team_Output;
+}
+
+-->
