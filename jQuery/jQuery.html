@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+        <body>
+            <p id="p1">
+                Click paragraph 1 here, please.
+            </p>
+            <br>
+            <p id="p2">
+                Click paragraph 2 here, please.
+            </p>
+
+        </body>
+
+    <script>
+        // jQuery Event --  write to the console log on a click:
+        $( "#p1" ).click(function() {
+            console.log( "You clicked paragraph one!" );
+        });
+
+        // jQuery Effect --  :
+        $( "#p2" ).click(function() {
+            alert( "You clicked paragraph two!" );
+        });
+
+    </script>
+
+
+</html>
+
+
+
+<!-- 
+
+
+===========================================
+
+===========================================
+
+===========================================
+
+===========================================
+
+===========================================
+VIDEO code from Step 338:
+    <script>
+        // go to the document, check if it's ready, begin a function command...
+        $(document).ready(function() {
+            // what are we targeting and what do we want to do with it?
+            $("html").append(
+                // content to append... all code within double quotes but 
+                // unique values are passed in single quotes:
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Jay Query is a handsome man.</h1>\
+                            <p id='1'>Paragraph 1 is red because CSS says so.</p>\
+                            <p id='2'>This text would like some privacy... please clickity clackity.</p>\
+                            <p id='3'>Paragraph 3</p>\
+                        </div>\
+                    </div>\
+                </body>"
+            );
+            $("#1").css({"color":"red"});
+            $("#2").click(function() {
+                $("#2").hide();
+            });
+        });
+    </script>
+
+-->
